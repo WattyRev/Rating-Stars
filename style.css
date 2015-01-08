@@ -4,9 +4,11 @@ div.stars {
 	z-index:0;
 }
 div.stars span {
-	width: 100.8%;
-	height: 100%;
-	display:block;
+	width: 105%;
+	height: 105%;
+	display: block;
+	position: relative;
+	left: -2.5%;
 }
 div.stars .fill {
 	height: 100%;

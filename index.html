@@ -4,28 +4,39 @@
 		<title>Rating Stars</title>
 
 		<link rel="stylesheet" href="style.css" />
+		<!-- Fallback CSS -->
+		<!--[if IE 8]>
+			<link rel="stylesheet" href="fallback.css" />
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="fallback.css" />
+		<![endif]-->
 	</head>
 	<h1>Rating Stars</h1>
+	<p>Below is an editable style element that shows the variable css properties for the rating stars. You can alter the size, fill percent, and fill color using css</p>
+	<p>Older browsers like IE8 and lower do not support SVG, and use an image overlay instead. This will not impact the fill percent and fill color, but some pixilation may occur if you do not resize the image.</p>
 	<style style="display:block" contenteditable="true">
 		.stars {
 			width: 160px;
-			height: 30px;/*16:3 width:height ratio*/;
+			height: 43px;
 		}
 		.stars .fill {
 			width: 80%;
 			background: #ffc43a;
 		}
+		.stars path {
+			fill: #ffffff;/*Change to match site background*/
+		}
 	</style>
 	<div class="stars">
 		<div class="fill"></div>
 		<span>
-			<svg viewBox="0 0 1256.1 233.7">
-				<path fill="#FFFFFF" d="M1256.1,233.7H0V0h1256.1V233.7z M84.9,76.9L0,89.3l61.4,59.9l-14.5,84.6l75.9-39.9l75.9,39.9l-14.5-84.6
-					l61.4-59.9l-84.9-12.3L122.9,0L84.9,76.9z M1095.2,76.9l-84.9,12.3l61.4,59.9l-14.5,84.6l75.9-39.9l75.9,39.9l-14.5-84.6l61.4-59.9
-					l-84.9-12.3l-38-76.9L1095.2,76.9z M842.6,76.9l-84.9,12.3l61.4,59.9l-14.5,84.6l75.9-39.9l75.9,39.9l-14.5-84.6l61.4-59.9
-					l-84.9-12.3L880.6,0L842.6,76.9z M590.1,76.9l-84.9,12.3l61.4,59.9l-14.5,84.6l75.9-39.9l75.9,39.9l-14.5-84.6l61.4-59.9L666,76.9
-					L628,0L590.1,76.9z M337.5,76.9l-84.9,12.3l61.4,59.9l-14.5,84.6l75.9-39.9l75.9,39.9l-14.5-84.6l61.4-59.9l-84.9-12.3L375.5,0
-					L337.5,76.9z"/>
+			<svg viewBox="0 0 174.8 46.7">
+				<path d="M174.8,46.7H0V0h174.8V46.7z M17.7,16.4L6.8,18l7.9,7.7l-1.9,10.9l9.7-5.1l9.7,5.1l-1.9-10.9l7.9-7.7
+					l-10.9-1.6l-4.9-9.9L17.7,16.4z M147.4,16.4L136.5,18l7.9,7.7l-1.9,10.9l9.7-5.1l9.7,5.1l-1.9-10.9L168,18l-10.9-1.6l-4.9-9.9
+					L147.4,16.4z M114.9,16.4L104,18l7.9,7.7l-1.9,10.9l9.7-5.1l9.7,5.1l-1.9-10.9l7.9-7.7l-10.9-1.6l-4.9-9.9L114.9,16.4z M82.5,16.4
+					L71.6,18l7.9,7.7l-1.9,10.9l9.7-5.1l9.7,5.1l-1.9-10.9l7.9-7.7l-10.9-1.6l-4.9-9.9L82.5,16.4z M50.1,16.4L39.2,18l7.9,7.7l-1.9,10.9
+					l9.7-5.1l9.7,5.1l-1.9-10.9l7.9-7.7l-10.9-1.6L55,6.5L50.1,16.4z"/>
 			</svg>
 		</span>
 	</div>
