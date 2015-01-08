@@ -14,7 +14,7 @@ Rating Stars uses an svg or image overlay with a white background and transparen
 ### Markup
 Use index.html as an example of how the html markup should be. Include the css from style.css for the basic functional styling. The css shown inline in index.html should be included in your stylesheet. This css should be altered to fit your sizing and color preferences.
 
-Because the svg for the stars works by making the stars transparent, the path in the svg should have its fill color match the background color of the site.
+Because the svg for the stars works by making the stars transparent, the path in the svg should have its fill color match the background color of the site. This may be an issue if placed on top of a background that is not a solid color
 
 ### Fallback
 If supporting IE8 and/or IE7, include the stars.png file. Depending on what size you want the stars to be, you may want to use stars.ai to export your desired size as a .png image using Adobe Illustrator.
